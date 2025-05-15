@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
 
 const navItems = {
@@ -10,7 +9,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <nav className="lg:mb-16 mb-12 py-5">
+    <nav className="lg:mb-16 mb-12 py-5 dark text-white">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="text-3xl font-semibold">
@@ -27,7 +26,6 @@ export function Navbar() {
               {name}
             </Link>
           ))}
-          <ThemeSwitch />
         </div>
       </div>
     </nav>
