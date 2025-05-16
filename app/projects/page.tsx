@@ -31,9 +31,9 @@ export default function Projects() {
             rel="noopener noreferrer"
           >
             <div className="w-full flex flex-col justify-between gap-2">
-              <div className="w-full flex">
+              <div className="w-full flex gap-2">
                 <h2 className="text-black dark:text-white">{project.title}</h2>
-                <p className="text-black dark:text-white">{project.time}</p>
+                <p className="text-black dark:text-white">( {project.time} )</p>
               </div>
               <p className="text-neutral-600 dark:text-neutral-400">
                 {project.description}
